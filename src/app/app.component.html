@@ -5,7 +5,11 @@
 <button (click)="changeName()">Change</button>
 
 <div>
-  <app-user-card [user]="users[0]"></app-user-card>
+  @for (i of users; track $index) {
+  <app-user-card [user]="i"></app-user-card>
+  }
+
+  <!-- <app-user-card [user]="users[0]"></app-user-card>
   <app-user-card [user]="users[1]"></app-user-card>
-  <app-user-card [user]="users[2]"></app-user-card>
+  <app-user-card [user]="users[2]"></app-user-card> -->
 </div>

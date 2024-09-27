@@ -1,4 +1,4 @@
-<div>
+<div [class.red]="user.role === 'Admin'">
     <h2>User Card #{{user.id}}</h2>
     <p>Name: {{user.name}}</p>
     <p>Email: {{user.email}}</p>
