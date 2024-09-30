@@ -1,8 +1,11 @@
 @if(user) {
-<div [class.red]="user.role === 'Admin'">
+<div class="card" [class.red]="user.role === 'Admin'">
     <h2>User Card #{{user.id}}</h2>
     <p>Name: {{user.name}}</p>
     <p>Email: {{user.email}}</p>
-    <p>Role: {{user.role}}</p>
+    <p>Role: {{user.role}} <button (click)="changeRole()">&lt;&gt;</button></p>
+    <div>
+        <button (click)="delete()">X</button>
+    </div>
 </div>
 }

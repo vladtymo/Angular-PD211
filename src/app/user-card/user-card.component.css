@@ -1,4 +1,4 @@
-div {
+.card {
     background-color: darkblue;
     color: white;
     padding: 10px;
@@ -8,15 +8,15 @@ div {
     transition: .2s;
 }
 
-div h2 {
+.card h2 {
     text-align: center;
 }
 
-div:hover {
+.card:hover {
     transform: scale(1.2);
     box-shadow: 2px 2px 8px black;
 }
 
-div.red {
+.card.red {
     background-color: darkred;
 }

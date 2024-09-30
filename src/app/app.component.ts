@@ -16,7 +16,13 @@ export class AppComponent {
 
   users: IUser[] = USERS;
 
-  // properties and methods
+  clear() {
+    this.users = [];
+  }
+  delete(id: number) {
+    let index = this.users.findIndex(x => x.id === id);
+    this.users.splice(index, 1);
+  }
   changeName() {
     this.name += '!';
   }
