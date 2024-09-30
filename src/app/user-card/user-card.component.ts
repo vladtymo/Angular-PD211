@@ -11,10 +11,5 @@ import { IUser } from '../user';
 export class UserCardComponent {
 
   @Input()
-  user: IUser = {
-    id: 1001,
-    name: "Vlad",
-    email: "balba@gmail.com",
-    role: "Admin"
-  }
+  user?: IUser;
 }
