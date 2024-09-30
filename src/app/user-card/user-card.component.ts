@@ -1,10 +1,13 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IUser } from '../user';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-user-card',
   standalone: true,
-  imports: [],
+  imports: [
+    DatePipe
+  ],
   templateUrl: './user-card.component.html',
   styleUrl: './user-card.component.css'
 })

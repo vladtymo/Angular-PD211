@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserCardComponent } from "./user-card/user-card.component";
 import { IUser, USERS } from './user';
+import { UserFormComponent } from "./user-form/user-form.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserCardComponent],
+  imports: [RouterOutlet, UserCardComponent, UserFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -25,5 +26,8 @@ export class AppComponent {
   }
   changeName() {
     this.name += '!';
+  }
+  create(user: IUser) {
+    this.users.push(user);
   }
 }

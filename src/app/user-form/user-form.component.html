@@ -1,0 +1,22 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label>
+        <span>Name:</span>
+        <input type="text" formControlName="name">
+    </label>
+    <label>
+        <span>Email:</span>
+        <input type="email" formControlName="email">
+    </label>
+    <label>
+        <span>Role:</span>
+        <input type="text" formControlName="role">
+    </label>
+    <label>
+        <span>Birthdate:</span>
+        <input type="date" formControlName="birthdate">
+    </label>
+    <div>
+        <button type="reset">Cancel</button>
+        <button type="submit">Create</button>
+    </div>
+</form>

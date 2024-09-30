@@ -17,3 +17,6 @@
 <div>
   <button (click)="clear()">Clear All</button>
 </div>
+
+<h2>Create New User</h2>
+<app-user-form (onCreate)="create($event)"></app-user-form>
